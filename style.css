@@ -1,0 +1,172 @@
+.draw{
+  width: 400px;
+  height: 600px;
+  position: relative;
+}
+
+.draw .base{
+  position: absolute;
+  height: 30px;
+  width: 300px;
+  bottom: 0;
+  left: 0;
+  background: #eee;
+}
+.draw .palo1{
+  position: absolute;
+  height: 580px;
+  width: 30px;
+  bottom: 0;
+  left: 135px;
+  background: #eee;
+}
+.draw .palo2{
+  position: absolute;
+  height: 30px;
+  width: 300px;
+  bottom: 0550px;
+  left: 135px;
+  background: #eee;
+}
+.draw .palo3{
+  position: absolute;
+  height: 120px;
+  width: 30px;
+  bottom: 460px;
+  left: 405px;
+  background: #eee;
+}
+.draw .suport1{
+  position: absolute;
+  height: 180px;
+  width: 30px;
+  bottom: -14px;
+  left: 201px;
+  transform: rotate(-45deg);
+  background: #eee;
+}
+.draw .suport2{
+  position: absolute;
+  height: 180px;
+  width: 30px;
+  bottom: -14px;
+  left: 70px;
+  transform: rotate(45deg);
+  background: #eee;
+}
+.draw .soga{
+  position: absolute;
+  height: 80px;
+  width: 10px;
+  bottom: 380px;
+  left: 415px;
+  background: #eee;
+}
+.draw .head{
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border: solid 20px #eee;
+  border-radius: 50%;
+  bottom: 302px;
+  left: 380px;
+}
+.draw .body{
+  position: absolute;
+  height: 150px;
+  width: 30px;
+  border-radius: 20px;
+  bottom: 170px;
+  left: 405px;
+  background: #eee;
+}
+.draw .arm1{
+  position: absolute;
+  height: 90px;
+  width: 20px;
+  border-radius: 20px;
+  bottom: 212px;
+  left: 379px;
+  transform: rotate(40deg);
+  background: #eee;
+}
+.draw .arm2{
+  position: absolute;
+    height: 90px;
+    width: 20px;
+    border-radius: 20px;
+    bottom: 212px;
+    left: 440px;
+    transform: rotate(-40deg);
+    background: #eee;
+}
+.draw .leg1{
+  position: absolute;
+  height: 100px;
+  width: 21px;
+  border-radius: 20px;
+  bottom: 95px;
+  left: 430px;
+  transform: rotate(160deg);
+  background: #eee;;
+}
+.draw .leg2{
+  position: absolute;
+  height: 100px;
+  width: 21px;
+  border-radius: 20px;
+  bottom: 95px;
+  left: 390px;
+  transform: rotate(-160deg);
+  background: #eee;;
+}
+
+.tileContainer{
+  gap: 16px;
+}
+.letterTile{
+  width: 60px;
+  height: 80px;
+  padding: 8px;
+  border-bottom: solid 5px #eee;
+  font-size: 3.3rem;
+  text-align: center;
+}
+.letter{
+  height: 50px;
+  width: 40px;
+  border-radius: 6px;
+  border: solid 2px #eee;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  background: rgb(56, 50, 50);
+  box-shadow: 0 0 8px #000c;
+}
+.disable{
+  opacity: 0.2;
+}
+.gap{
+  gap: 12px;
+}
+.endModal{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #000a;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media(max-width: 640px){
+  .draw{
+    height: 400px;
+    transform: scale(0.7) translateX(-94px) translateY(110px);
+  }
+  .tileContainer{
+    gap:10px
+  }
+}

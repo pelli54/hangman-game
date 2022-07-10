@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+</head> 
+<body class="bg-dark">
+  <div class="container text-white">
+    <div class="endModal d-none">
+      <h1>You Win</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-lg-6">
+        <div class="draw" id="draw">
+          <div class="base"></div>
+          <div class="palo1"></div>
+          <div class="palo2"></div>
+          <div class="palo3"></div>
+          <div class="suport1"></div>
+          <div class="suport2"></div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-6 d-flex flex-column justify-content-center">
+        <div class="tileContainer d-flex justify-content-center" id="tileCont" >
+          
+        </div>
+        <div class="d-flex flex-wrap gap mt-5 " id="letterCont">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
